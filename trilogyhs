@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+  <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+  <!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+  <!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=”referrer” content=”no-referrer-when-downgrade” />
+    <meta name="author" content="Design Web">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://trilogyhs.com/xmlrpc.php">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+    <script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Trilogy Health Services - Blog - Senior Living</title>
+	<meta name="description" content="Our blog offers insight into independent living, assisted living and memory care, and skilled nursing and rehabilitative services." />
+	<link rel="canonical" href="https://trilogyhs.com/blog/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Trilogy Health Services - Blog - Senior Living" />
+	<meta property="og:description" content="Our blog offers insight into independent living, assisted living and memory care, and skilled nursing and rehabilitative services." />
+	<meta property="og:url" content="https://trilogyhs.com/blog/" />
+	<meta property="og:site_name" content="Trilogy Health Services" />
+	<meta property="article:modified_time" content="2023-03-07T17:38:50+00:00" />
+	<meta property="og:image" content="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trilogyhs.com/blog/","url":"https://trilogyhs.com/blog/","name":"Trilogy Health Services - Blog - Senior Living","isPartOf":{"@id":"https://trilogyhs.com/#website"},"primaryImageOfPage":{"@id":"https://trilogyhs.com/blog/#primaryimage"},"image":{"@id":"https://trilogyhs.com/blog/#primaryimage"},"thumbnailUrl":"https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg","datePublished":"2022-11-05T17:37:55+00:00","dateModified":"2023-03-07T17:38:50+00:00","description":"Our blog offers insight into independent living, assisted living and memory care, and skilled nursing and rehabilitative services.","breadcrumb":{"@id":"https://trilogyhs.com/blog/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://trilogyhs.com/blog/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://trilogyhs.com/blog/#primaryimage","url":"https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280.jpg","contentUrl":"https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280.jpg","width":1920,"height":1280,"caption":"Residents at home enjoying the amenities at Trilogy Health Campus"},{"@type":"BreadcrumbList","@id":"https://trilogyhs.com/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://trilogyhs.com/"},{"@type":"ListItem","position":2,"name":"Blog"}]},{"@type":"WebSite","@id":"https://trilogyhs.com/#website","url":"https://trilogyhs.com/","name":"Trilogy Health Services","description":"","publisher":{"@id":"https://trilogyhs.com/#organization"},"alternateName":"Trilogy","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://trilogyhs.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://trilogyhs.com/#organization","name":"Trilogy Health Services","url":"https://trilogyhs.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://trilogyhs.com/#/schema/logo/image/","url":"https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_Logo_tz3fme.webp","contentUrl":"https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_Logo_tz3fme.webp","width":400,"height":280,"caption":"Trilogy Health Services"},"image":{"@id":"https://trilogyhs.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="alternate" type="application/rss+xml" title="Trilogy Health Services &raquo; Feed" href="https://trilogyhs.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Trilogy Health Services &raquo; Comments Feed" href="https://trilogyhs.com/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css' href='https://trilogyhs.com/wp-includes/css/dist/block-library/style.min.css'  media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--darkblue: #041B2C;--wp--preset--color--lightblue: #99B5D2;--wp--preset--color--mediumblue: #5E8AB4;--wp--preset--color--green: #577f3d;--wp--preset--color--orange: #D15D14;--wp--preset--color--purple: #B487B8;--wp--preset--color--berry: #CC3262;--wp--preset--color--yellow: #EBA900;--wp--preset--color--gray: #f1f1f1;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-darkblue-color{color: var(--wp--preset--color--darkblue) !important;}.has-lightblue-color{color: var(--wp--preset--color--lightblue) !important;}.has-mediumblue-color{color: var(--wp--preset--color--mediumblue) !important;}.has-green-color{color: var(--wp--preset--color--green) !important;}.has-orange-color{color: var(--wp--preset--color--orange) !important;}.has-purple-color{color: var(--wp--preset--color--purple) !important;}.has-berry-color{color: var(--wp--preset--color--berry) !important;}.has-yellow-color{color: var(--wp--preset--color--yellow) !important;}.has-gray-color{color: var(--wp--preset--color--gray) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-darkblue-background-color{background-color: var(--wp--preset--color--darkblue) !important;}.has-lightblue-background-color{background-color: var(--wp--preset--color--lightblue) !important;}.has-mediumblue-background-color{background-color: var(--wp--preset--color--mediumblue) !important;}.has-green-background-color{background-color: var(--wp--preset--color--green) !important;}.has-orange-background-color{background-color: var(--wp--preset--color--orange) !important;}.has-purple-background-color{background-color: var(--wp--preset--color--purple) !important;}.has-berry-background-color{background-color: var(--wp--preset--color--berry) !important;}.has-yellow-background-color{background-color: var(--wp--preset--color--yellow) !important;}.has-gray-background-color{background-color: var(--wp--preset--color--gray) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-darkblue-border-color{border-color: var(--wp--preset--color--darkblue) !important;}.has-lightblue-border-color{border-color: var(--wp--preset--color--lightblue) !important;}.has-mediumblue-border-color{border-color: var(--wp--preset--color--mediumblue) !important;}.has-green-border-color{border-color: var(--wp--preset--color--green) !important;}.has-orange-border-color{border-color: var(--wp--preset--color--orange) !important;}.has-purple-border-color{border-color: var(--wp--preset--color--purple) !important;}.has-berry-border-color{border-color: var(--wp--preset--color--berry) !important;}.has-yellow-border-color{border-color: var(--wp--preset--color--yellow) !important;}.has-gray-border-color{border-color: var(--wp--preset--color--gray) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+.wp-block-button .wp-block-button__link{background-color: var(--wp--preset--color--green);border-radius: 0px;color: var(--wp--preset--color--white);font-size: 20px;font-weight: 900;}
+.wp-block-separator{background-color: var(--wp--preset--color--green);color: var(--wp--preset--color--green);padding-bottom: 4px;}
+</style>
+<link rel='stylesheet' id='designweb-style-css' href='https://trilogyhs.com/wp-content/themes/trilogy/style.min.css'  media='all' />
+<script  src='https://trilogyhs.com/wp-content/themes/trilogy/js/jquery-3.6.0.min.js' id='jq-js'></script>
+<script  src='https://trilogyhs.com/wp-content/themes/trilogy/js/slick.js' id='slick-js'></script>
+<script  src='https://trilogyhs.com/wp-content/themes/trilogy/js/scripts.min.js' id='designweb-scripts-js'></script>
+<link rel="https://api.w.org/" href="https://trilogyhs.com/wp-json/" /><link rel="alternate" type="application/json" href="https://trilogyhs.com/wp-json/wp/v2/pages/51" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://trilogyhs.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://trilogyhs.com/wp-includes/wlwmanifest.xml" />
+<link rel='shortlink' href='https://trilogyhs.com/?p=51' />
+<link rel="alternate" type="application/json+oembed" href="https://trilogyhs.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftrilogyhs.com%2Fblog%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://trilogyhs.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftrilogyhs.com%2Fblog%2F&#038;format=xml" />
+		<style type="text/css" id="wp-custom-css">
+			.pagecontents li {
+    font-size: 1.125rem;
+    color: #041b2c;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.pagecontents ul {
+    padding-bottom: 15px;
+}
+
+.slider-banner .container .repeatitems .banner-slide .right-banner img {
+	/*aspect-ratio: 4 /3;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+strong.schema-faq-question {
+    font-size: x-large;
+}
+.schema-faq.wp-block-yoast-faq-block {
+    margin: auto;
+    padding: 20px;
+}
+p.schema-faq-answer {
+    margin: 10px 20px 30px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.is-layout-constrained.wp-block-group {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.text-with-images.flipped .wp-block-columns.talltxt .wp-block-column.threeimages {
+	max-height: unset;
+}
+.commsearch .additionalfilters .filter {
+	width:100% !important;
+}
+@media only screen and (min-width: 767px) {
+.commsearch .facetwp-type-checkboxes .facetwp-checkbox {
+  width: calc(33% - 40px) !important;
+}
+}
+
+further-element {
+	overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+footer .topfooter .flexlinks a {
+	width: unset;
+	padding-right: 8px;
+}
+}
+.commsearch .filterresults .communitylist .communityitem .profileandbanner .communityprofile {
+	min-height:250px;
+}
+#jqvmap1_wi {
+  cursor: pointer;
+}
+#jqvmap1_wi:active, #jqvmap1_wi:focus, #jqvmap1_wi:focus-within, #jqvmap1_wi:hover {
+  fill: #577f3d;
+}
+		</style>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJZFDJS');</script>
+<!-- End Google Tag Manager -->
+<meta name="facebook-domain-verification" content="mteauxculjzstk57f3dar3ewhrq4dt" />    <!-- favicon -->
+    <link rel="icon" href="https://trilogyhs.com/wp-content/uploads/favicon.webp" type="image/png">
+    <link rel="shortcut icon" href="https://trilogyhs.com/wp-content/uploads/favicon.webp" type="image/png" />
+    <link rel="apple-touch-icon" href="https://trilogyhs.com/wp-content/uploads/favicon.webp" />
+    <script defer src="https://kit.fontawesome.com/13de0025ce.js" crossorigin="anonymous"></script>
+    <script>
+    window.FontAwesomeConfig = {
+    searchPseudoElements: true
+    }
+    </script>
+    <link rel="stylesheet" href="https://use.typekit.net/tmj7mao.css" rel="preload" as="style"><script defer type="text/javascript">try{Typekit.load();}catch(e){}</script>  <style>
+        h1 {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:clamp(24px, 1.5vw, 60px);
+         font-weight:700;
+         font-style:normal;
+         line-height:1.4em;
+         color:#041b2c;
+         text-decoration:none;
+         text-transform:none;
+                }
+        h2 {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:clamp(24px, 3vw, 32px);
+         font-weight:700;
+         font-style:normal;
+         line-height:1.4em;
+         color:#041b2c;
+         text-decoration:none;
+         text-transform:none;
+                }
+        h3 {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:clamp(18px, .5vw, 32px);
+         font-weight:700;
+         font-style:normal;
+         line-height:1.4em;
+         color:#041b2c;
+         text-decoration:none;
+         text-transform:none;
+                }
+        h4 {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:1.25rem;
+         font-weight:700;
+         font-style:normal;
+         line-height:1.4em;
+         color:#000;
+         text-decoration:none;
+         text-transform:none;
+                }
+        h5 {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:1.125rem;
+         font-weight:700;
+         font-style:normal;
+         line-height:1.4em;
+         color:#000;
+         text-decoration:none;
+         text-transform:none;
+                }
+        h6 {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:1rem;
+         font-weight:700;
+         font-style:normal;
+         line-height:1.4em;
+         color:#000;
+         text-decoration:none;
+         text-transform:none;
+                }
+        p {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:1rem;
+         font-weight:400;
+         font-style:normal;
+         line-height:1.7em;
+         color:#000;
+         text-decoration:none;
+         text-transform:none;
+                }
+        .button,
+        .btn,
+        .wpcf7-submit,
+        .nav-previous a,
+        .nav-next a,
+        div.wpforms-container-full .wpforms-form  .wpforms-submit-container input[type=submit],
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit] {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:1.125rem;
+         font-weight:900;
+         font-style:normal;
+         line-height:1.4em;
+         color:#ffffff;
+         text-decoration:none;
+         text-transform:uppercase;
+        background-color: rgb(4,27,44);
+        border: 2px solid rgb(4,27,44);
+        }
+        .button:hover,
+        .btn:hover,
+        .wpcf7-submit:hover,
+        .nav-previous a:hover,
+        .nav-next a:hover,
+        .wpforms-submit:hover,
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container input[type=submit]:hover,
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:hover,
+        .button:active,
+        .btn:active,
+        .wpcf7-submit:active,
+        .nav-previous a:active,
+        .nav-next a:active,
+        .wpforms-submit:active,
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container input[type=submit]:active,
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:active,
+        .button:focus,
+        .btn:focus,
+        .wpcf7-submit:focus,
+        .nav-previous a:focus,
+        .nav-next a:focus,
+        .wpforms-submit:focus,
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container input[type=submit]:focus,
+        div.wpforms-container-full .wpforms-form .wpforms-submit-container button[type=submit]:focus {
+        background-color: #FFFFFF;
+        color: rgb(4,27,44);
+        }
+        .rbutton,
+        .whitetext .button {
+         font-family: "museo-sans", sans-serif; ;
+         font-size:1.125rem;
+         font-weight:900;
+         font-style:normal;
+         line-height:1.4em;
+         color:#ffffff;
+         text-decoration:none;
+         text-transform:uppercase;
+        background-color: rgb(87,127,61);
+        border: 2px solid rgb(87,127,61);
+        }
+        .rbutton:hover,
+        .whitetext .button:hover,
+        .rbutton:active,
+        .whitetext .button:active,
+        .rbutton:focus,
+        .whitetext .button:focus   {
+        background-color: rgb(255,255,255);
+        color: rgb(87,127,61);
+        }
+                </style>  </head>
+  <body class="page-template-default page page-id-51">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJZFDJS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->        <div id="page" class="site">
+      <a class="skip-link screen-reader-text" href="#main">
+      Skip to content</a>
+      <header id="masthead" class="site-header interiorheader">
+        <div class="logoheader">
+    <div class="container">
+                <a class="button leftheaderbutton" href="https://www.trilogyjobs.com/">
+            Careers        </a>
+                <a class="navlogo" href="/">
+            <img src="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_Logo_tz3fme.webp" alt="Trilogy Health Services, LLC Logo">
+            <h1>Trilogy Health Services</h1>
+        </a>
+                <a target="_blank" class="rbutton rightheaderbutton" href="/wp-content/uploads/Senior_Living_Guide_Trilogy_Health_Services.pdf">
+            Senior Living Guide        </a>
+            </div>
+</div>
+<div class="mainheader" style="background-color:rgb(255,255,255)">
+    <div class="container flexy">
+        <div class="navbutton"><i class="fas fa-bars"></i> MENU</div>
+        <nav class="mainnavigation">
+            <span class="closer">X</span>
+            <ul>
+                <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-83"><a href="https://trilogyhs.com/">Home</a></li>
+<li id="menu-item-43785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43785"><a href="https://trilogyhs.com/communities/">Community Locations</a></li>
+<li id="menu-item-65" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65"><a href="#">Care Options</a>
+<ul class="sub-menu">
+	<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://trilogyhs.com/care-options/">Care Options</a></li>
+	<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="https://trilogyhs.com/assisted-living-or-personal-care/">Assisted Living or Personal Care</a></li>
+	<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="https://trilogyhs.com/skilled-nursing/">Skilled Nursing</a></li>
+	<li id="menu-item-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="https://trilogyhs.com/memory-care/">Memory Care</a></li>
+	<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://trilogyhs.com/independent-living/">Independent Living</a></li>
+</ul>
+</li>
+<li id="menu-item-66" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-66"><a href="#">The Trilogy Advantage</a>
+<ul class="sub-menu">
+	<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="https://trilogyhs.com/the-trilogy-advantage/">The Trilogy Advantage</a></li>
+	<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://trilogyhs.com/lifestyle/">Lifestyle</a></li>
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://trilogyhs.com/dining-services/">Culinary Services</a></li>
+	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://trilogyhs.com/trilogy-shield/">Trilogy Shield</a></li>
+</ul>
+</li>
+<li id="menu-item-67" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-67"><a href="#">Work With Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-36910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36910"><a href="https://www.trilogyjobs.com/">Careers</a></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="https://trilogyhs.com/volunteer/">Volunteer</a></li>
+</ul>
+</li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-51 current_page_item menu-item-55"><a href="https://trilogyhs.com/blog/" aria-current="page">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>      </header>
+      <span id="top"></span><main id="main" class="generalelements">
+	<section class="pagecontents">
+		<section  class="text-with-images">
+  <div class="container">
+    
+
+<div class="wp-block-columns is-layout-flex wp-container-3">
+<div class="wp-block-column txtscol is-layout-flow">
+<h2 class="wp-block-heading">Trilogy Health Services</h2>
+
+
+
+<h3 class="wp-block-heading">Blog</h3>
+
+
+
+<p>Our communities offer independent living, assisted living and memory care, and skilled nursing and rehabilitative services.</p>
+
+
+
+<p>Trilogy operates multiple senior health communities throughout Kentucky, Indiana, Ohio and Michigan. Since 1997, we’ve dedicated ourselves to being the best healthcare company in the Midwest by providing exceptional, comprehensive care to seniors in every community we serve.</p>
+</div>
+
+
+
+<div class="wp-block-column imgscol is-layout-flow">
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="683" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Residents at home enjoying the amenities at Trilogy Health Campus" class="wp-image-2320 ewww_webp"  sizes="(max-width: 1024px) 100vw, 1024px" data-src-img="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg.webp" data-srcset-webp="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg.webp 1024w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-300x200.jpg.webp 300w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-768x512.jpg.webp 768w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1536x1024.jpg.webp 1536w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-2048x1366.jpg.webp 2048w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-200x133.jpg.webp 200w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280.jpg.webp 1920w" data-srcset-img="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg 1024w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-300x200.jpg 300w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-768x512.jpg 768w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1536x1024.jpg 1536w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-2048x1366.jpg 2048w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-200x133.jpg 200w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280.jpg 1920w" data-eio="j" /><noscript><img decoding="async" width="1024" height="683" src="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg" alt="Residents at home enjoying the amenities at Trilogy Health Campus" class="wp-image-2320" srcset="https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1024x683.jpg 1024w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-300x200.jpg 300w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-768x512.jpg 768w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-1536x1024.jpg 1536w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-2048x1366.jpg 2048w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280-200x133.jpg 200w, https://trilogyhs.com/wp-content/uploads/Trilogy-Health-Services-Senior-Living-280.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></figure>
+</div>
+</div>
+
+  </div>
+</section>
+<script>
+var imageblock = document.querySelectorAll(".text-with-images .imgscol");
+imageblock.forEach(item => {
+  var numberOfChildren = item.childElementCount;
+  if (numberOfChildren == 1) {
+    item.classList.add('singleimage');
+  }
+  if (numberOfChildren == 2) {
+    item.classList.add('twoimages');
+  }
+  if (numberOfChildren == 3) {
+    item.classList.add('threeimages');
+  }
+  if (numberOfChildren == 4) {
+    item.classList.add('fourimages');
+  }
+  if (numberOfChildren == 5) {
+    item.classList.add('fiveimages');
+  }
+  if (numberOfChildren == 6) {
+    item.classList.add('siximages');
+  }
+  if (numberOfChildren >= 7) {
+    item.classList.add('sevenplus');
+  }
+})
+</script>
+
+
+    <section  class="blog-section-block">
+        <div class="container">
+            
+
+<h2 class="has-text-align-center wp-block-heading">Trilogy Health Services News</h2>
+
+            <div class="blogarea">
+                <div class="bloglist">
+                                                <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/the-clinical-corner-the-benefits-of-vitamin-d/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for The Clinical Corner &#8211; The Benefits of Vitamin D" data-src-img="https://trilogyhs.com/wp-content/uploads/GettyImages-1338623083-1024x658.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/GettyImages-1338623083-1024x658.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/GettyImages-1338623083-1024x658.jpg" alt="Blog post image for The Clinical Corner &#8211; The Benefits of Vitamin D"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>The Clinical Corner &#8211; The Benefits of Vitamin D</h4>
+                                        <h5 class="thedate">
+                                            January 6, 2023                                        </h5>
+                                        <p>Welcome to 2023 everyone – and welcome back to the Clinical Corner!&nbsp; At the beginning of the year, we see&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/the-clinical-corner-the-benefits-of-vitamin-d/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/how-we-celebrate-1970s-disco-fever-theme-week/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for How We Celebrate &#8211; 1970&#8217;s Disco Fever Theme Week" data-src-img="https://trilogyhs.com/wp-content/uploads/70s-residents-1-1024x659.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/70s-residents-1-1024x659.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/70s-residents-1-1024x659.jpg" alt="Blog post image for How We Celebrate &#8211; 1970&#8217;s Disco Fever Theme Week"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>How We Celebrate &#8211; 1970&#8217;s Disco Fever Theme Week</h4>
+                                        <h5 class="thedate">
+                                            August 3, 2023                                        </h5>
+                                        <p>The disco balls are coming down! From July 21st &#8211; 25th, we celebrated our Disco Fever Theme Week with a&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/how-we-celebrate-1970s-disco-fever-theme-week/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/trilogy-brings-more-sales-marketing-power-to-the-c-suite/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for Trilogy Brings More Sales &#038; Marketing Power to the C-Suite" data-src-img="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_CMYK_Logo-1024x706.png" data-src-webp="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_CMYK_Logo-1024x706.png.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_CMYK_Logo-1024x706.png" alt="Blog post image for Trilogy Brings More Sales &#038; Marketing Power to the C-Suite"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>Trilogy Brings More Sales &#038; Marketing Power to the C-Suite</h4>
+                                        <h5 class="thedate">
+                                            August 1, 2023                                        </h5>
+                                        <p>LOUISVILLE, Ky. (July 28, 2023) – Trilogy Health Services is pleased to announce the appointment of Staci Woods to the&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/trilogy-brings-more-sales-marketing-power-to-the-c-suite/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/getting-to-know-staci-woods-trilogys-new-chief-growth-officer/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for Getting to Know Staci Woods, Trilogy&#8217;s New Chief Growth Officer" data-src-img="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-28-2-1024x576.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-28-2-1024x576.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-28-2-1024x576.jpg" alt="Blog post image for Getting to Know Staci Woods, Trilogy&#8217;s New Chief Growth Officer"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>Getting to Know Staci Woods, Trilogy&#8217;s New Chief Growth Officer</h4>
+                                        <h5 class="thedate">
+                                            August 1, 2023                                        </h5>
+                                        <p>Welcome to the August edition of Leadership Spotlight! In this edition, we sit down with our newly appointed Chief Growth&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/getting-to-know-staci-woods-trilogys-new-chief-growth-officer/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/the-clinical-corner-age-and-incontinence/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for The Clinical Corner &#8211; Age and Incontinence" data-src-img="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-47-1.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-47-1.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-47-1.jpg" alt="Blog post image for The Clinical Corner &#8211; Age and Incontinence"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>The Clinical Corner &#8211; Age and Incontinence</h4>
+                                        <h5 class="thedate">
+                                            July 19, 2023                                        </h5>
+                                        <p>Welcome back to the Clinical Corner, everyone! Last month, we talked about the power of vitamin D – a fatigue-fighting&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/the-clinical-corner-age-and-incontinence/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/a-new-chapter-trilogy-health-services-and-synchrony-health-services/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for A New Chapter &#8211; Trilogy Health Services and Synchrony Health Services" data-src-img="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-46-1024x576.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-46-1024x576.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/MicrosoftTeams-image-46-1024x576.jpg" alt="Blog post image for A New Chapter &#8211; Trilogy Health Services and Synchrony Health Services"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>A New Chapter &#8211; Trilogy Health Services and Synchrony Health Services</h4>
+                                        <h5 class="thedate">
+                                            July 18, 2023                                        </h5>
+                                        <p>Exciting news! We&#8217;re thrilled to announce today the reintegration of Synchrony Health Services as a business unit, rather than a&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/a-new-chapter-trilogy-health-services-and-synchrony-health-services/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/memory-care-at-trilogy/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for Memory Care at Trilogy" data-src-img="https://trilogyhs.com/wp-content/uploads/exercise-1024x768.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/exercise-1024x768.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/exercise-1024x768.jpg" alt="Blog post image for Memory Care at Trilogy"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>Memory Care at Trilogy</h4>
+                                        <h5 class="thedate">
+                                            June 21, 2023                                        </h5>
+                                        <p>When it comes to navigating memory loss, we treat our residents with the same love and care that we would&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/memory-care-at-trilogy/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/trilogy-health-services-adds-dynamic-leader-to-c-suite/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for Trilogy Health Services Adds Dynamic Leader to C-Suite" data-src-img="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_CMYK_Logo-1024x706.png" data-src-webp="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_CMYK_Logo-1024x706.png.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_CMYK_Logo-1024x706.png" alt="Blog post image for Trilogy Health Services Adds Dynamic Leader to C-Suite"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>Trilogy Health Services Adds Dynamic Leader to C-Suite</h4>
+                                        <h5 class="thedate">
+                                            June 16, 2023                                        </h5>
+                                        <p>New CHRIO brings her diverse background to the senior living leader LOUISVILLE, Ky., June 16, 2023 /PRNewswire/ &#8212; Trilogy Health&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/trilogy-health-services-adds-dynamic-leader-to-c-suite/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="griddiv">
+                                <div class="boxholder">
+                                    <a href="https://trilogyhs.com/sitting-down-with-wendy-dowd-trilogys-new-chief-human-resources-inclusion-officer/">
+                                        <img decoding="async" class="relatedpostimg ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Blog post image for Sitting Down with Wendy Dowd, Trilogy&#8217;s New Chief Human Resources &#038; Inclusion Officer" data-src-img="https://trilogyhs.com/wp-content/uploads/Leadership_Spotlight_Wendy_Dowd-1024x576.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/Leadership_Spotlight_Wendy_Dowd-1024x576.jpg.webp" data-eio="j"><noscript><img decoding="async" class="relatedpostimg" src="https://trilogyhs.com/wp-content/uploads/Leadership_Spotlight_Wendy_Dowd-1024x576.jpg" alt="Blog post image for Sitting Down with Wendy Dowd, Trilogy&#8217;s New Chief Human Resources &#038; Inclusion Officer"></noscript>
+                                    </a>
+                                    <div class="blogexcerpt">
+                                        <h4>Sitting Down with Wendy Dowd, Trilogy&#8217;s New Chief Human Resources &#038; Inclusion Officer</h4>
+                                        <h5 class="thedate">
+                                            June 15, 2023                                        </h5>
+                                        <p>Welcome to the June edition of Leadership Spotlight! In this entry, we sit down with our new Chief Human Resources&#8230;</p>
+                                        <a class="rbutton" href="https://trilogyhs.com/sitting-down-with-wendy-dowd-trilogys-new-chief-human-resources-inclusion-officer/">Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="pagination">
+                            <span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://trilogyhs.com/blog/page/2/">2</a>
+<a class="page-numbers" href="https://trilogyhs.com/blog/page/3/">3</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class="page-numbers" href="https://trilogyhs.com/blog/page/19/">19</a>
+<a class="next page-numbers" href="https://trilogyhs.com/blog/page/2/">Next &raquo;</a>                        </div>
+                                                        </div>
+                <aside>
+                    <div class="sidebarbox">
+                        <h3>Trilogy Health Services</h3>                        <ul class="sidebarcontact">
+                                                                 <li><a href="tel:502-412-5847"><i class="fa-regular fa-phone-volume"></i> <span>502-412-5847</span></a></li>
+                                                                     <li><a target="_blank" href="https://www.google.com/maps/place/+303+N+Hurstbourne+Pkwy+Ste+200++Louisville+KY"><i class="fa-regular fa-location-dot"></i><span> 303 N Hurstbourne Pkwy Ste 200 Louisville, KY</span></a></li>                        </ul>
+                    </div>
+                    <div class="sidebarbox">
+                        <h4>Recent Posts</h4>
+                                                <div class="recentposts">
+                                                            <a href="https://trilogyhs.com/how-we-celebrate-1970s-disco-fever-theme-week/">
+                                    How We Celebrate &#8211; 1970&#8217;s Disco Fever Theme Week                                </a>
+                                                            <a href="https://trilogyhs.com/trilogy-brings-more-sales-marketing-power-to-the-c-suite/">
+                                    Trilogy Brings More Sales &#038; Marketing Power to the C-Suite                                </a>
+                                                            <a href="https://trilogyhs.com/getting-to-know-staci-woods-trilogys-new-chief-growth-officer/">
+                                    Getting to Know Staci Woods, Trilogy&#8217;s New Chief Growth Officer                                </a>
+                                                            <a href="https://trilogyhs.com/the-clinical-corner-age-and-incontinence/">
+                                    The Clinical Corner &#8211; Age and Incontinence                                </a>
+                                                            <a href="https://trilogyhs.com/a-new-chapter-trilogy-health-services-and-synchrony-health-services/">
+                                    A New Chapter &#8211; Trilogy Health Services and Synchrony Health Services                                </a>
+                                                    </div>
+                    </div>
+                    <div class="sidebarbox">
+                        <h4>Categories</h4>
+                        <div class="categories">
+                            <a href="https://trilogyhs.com/category/all/" alt="View all posts in All">All</a><a href="https://trilogyhs.com/category/blog/" alt="View all posts in Blog">Blog</a><a href="https://trilogyhs.com/category/blog/staff-stories/" alt="View all posts in Staff Stories">Staff Stories</a><a href="https://trilogyhs.com/category/blog/resident-stories/" alt="View all posts in Resident Stories">Resident Stories</a><a href="https://trilogyhs.com/category/blog/dining/" alt="View all posts in Dining">Dining</a><a href="https://trilogyhs.com/category/blog/family-caregivers/" alt="View all posts in Family Caregivers">Family Caregivers</a><a href="https://trilogyhs.com/category/blog/active-aging/" alt="View all posts in Active Aging">Active Aging</a><a href="https://trilogyhs.com/category/blog/just-for-kicks/" alt="View all posts in Just for Kicks">Just for Kicks</a><a href="https://trilogyhs.com/category/blog/financial-planning/" alt="View all posts in Financial Planning">Financial Planning</a><a href="https://trilogyhs.com/category/blog/generations/" alt="View all posts in Generations">Generations</a>                        </div>
+                        <div class="socialmedia">
+                            <ul class="socials">
+                                                                    <li>
+                                        <a target="_blank" title="facebook link" class="facebook" href="https://www.facebook.com/trilogyhs">
+                                            <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                                                                                    <li>
+                                        <a target="_blank" title="twitter link" class="twitter" href="https://twitter.com/TrilogyLiving">
+                                            <i class="fab fa-twitter "></i>
+                                        </a>
+                                    </li>
+                                                                                                    <li>
+                                        <a target="_blank" title="instagram link" class="instagram" href="https://www.instagram.com/trilogy_healthservices/">
+                                            <i class="fab fa-instagram "></i>
+                                        </a>
+                                    </li>
+                                                                                                    <li>
+                                        <a target="_blank" title="youtube link" class="youtube" href="https://www.youtube.com/TrilogyHealthService">
+                                            <i class="fab fa-youtube "></i>
+                                        </a>
+                                    </li>
+                                                                                                    <li>
+                                        <a target="_blank" title="linkedin link" class="linkedin" href="https://www.linkedin.com/company/trilogy-health-services-llc">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                                                                                                            </ul>
+                        </div>
+                    </div>
+                                            <div class="sidebarbox">
+                            <h4>Tags</h4>
+                            <div class="tags">
+                                <a href='https://trilogyhs.com/tag/active-aging/' title='Active Aging Tag' class='active-aging'>Active Aging</a><a href='https://trilogyhs.com/tag/all/' title='All Tag' class='all'>All</a><a href='https://trilogyhs.com/tag/clinical-corner/' title='Clinical Corner Tag' class='clinical-corner'>Clinical Corner</a><a href='https://trilogyhs.com/tag/dining/' title='Dining Tag' class='dining'>Dining</a><a href='https://trilogyhs.com/tag/financial-planning/' title='Financial Planning Tag' class='financial-planning'>Financial Planning</a><a href='https://trilogyhs.com/tag/just-for-kicks/' title='Just For Kicks Tag' class='just-for-kicks'>Just For Kicks</a><a href='https://trilogyhs.com/tag/staff-stories/' title='Staff Stories Tag' class='staff-stories'>Staff Stories</a><a href='https://trilogyhs.com/tag/where-family-comes-to/' title='Where Family Comes To Tag' class='where-family-comes-to'>Where Family Comes To</a>                            </div>
+                        </div>
+                                    </aside>
+            </div>
+        </div>
+    </section>
+	</section>
+</main>
+</div>
+<footer class="mainfooter" style="background-color:#f0f0f0">
+  <div class="container">
+    <div class="topfooter flexy">
+      <div class="fcol1">
+        <ul class="socials">
+                    <li>
+            <a target="_blank" title="facebook link" class="facebook" href="https://www.facebook.com/trilogyhs">
+              <span class="fa-stack">
+                <i class="fa-thin fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+                              <li>
+            <a target="_blank" title="twitter link" class="twitter" href="https://twitter.com/TrilogyLiving">
+              <span class="fa-stack">
+                <i class="fa-thin fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+                              <li>
+            <a target="_blank" title="instagram link" class="instagram" href="https://www.instagram.com/trilogy_healthservices/">
+              <span class="fa-stack">
+                <i class="fa-thin fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+                              <li>
+            <a target="_blank" title="youtube link" class="youtube" href="https://www.youtube.com/TrilogyHealthService">
+              <span class="fa-stack">
+                <i class="fa-thin fa-circle fa-stack-2x"></i>
+                <i class="fab fa-youtube fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+                              <li>
+            <a target="_blank" title="linkedin link" class="linkedin" href="https://www.linkedin.com/company/trilogy-health-services-llc">
+              <span class="fa-stack">
+                <i class="fa-thin fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x"></i>
+              </span>
+            </a>
+          </li>
+                                                          </ul>
+        <a class="covidr" href="/covid-19/">COVID-19 Reporting</a>
+        <hr>
+        <div class="flexlinks flexy">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <p class="pipe">|</p>
+          <a href="/compliance/">Compliance Inquiries</a>
+          <a class="a11y" href="/accessibility-statement/">Accessibility Statement</a>
+        </div>
+      </div>
+      <div class="fcol2">
+        <img class="footerlogo" src="https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_Logo_tz3fme.webp" alt="Trilogy Health Services, LLC Logo">        <ul class="contactlist">
+          <li><i class="fa-light fa-phone-volume"></i> <a href="tel:502-412-5847">502-412-5847</a></li><li><i class="fa-light fa-location-dot"></i> <a target="_blank" href="https://www.google.com/maps/place/+303+N+Hurstbourne+Pkwy+Ste+200+Louisville+KY"> 303 N Hurstbourne Pkwy Ste 200 <br>Louisville, KY 40222</a></li>        </ul>
+      </div>
+      <div class="fcol3">
+        <div class="a11ycontainer">
+          <img class="a11ylogo ewww_webp" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="W3C WAI-AA WCAG 2.0 logo" data-src-img="https://trilogyhs.com/wp-content/uploads/wcaglogo.jpg" data-src-webp="https://trilogyhs.com/wp-content/uploads/wcaglogo.jpg.webp" data-eio="j"><noscript><img class="a11ylogo" src="https://trilogyhs.com/wp-content/uploads/wcaglogo.jpg" alt="W3C WAI-AA WCAG 2.0 logo"></noscript>        </div>
+        <div class="flexlinks flexy">
+          <a target="_blank" href="https://my.adp.com/">My ADP Login</a>
+          <p class="pipe">|</p>
+          <a target="_blank" href="https://trilogyhs.centrical.me/">Trilogy U Login</a>
+          <p class="pipe">|</p>
+          <a href="/communities/">Find a Trilogy Location</a>
+        </div>
+        <hr>
+        <div class="flexlinks">
+                          <p class="flexcopy">
+                <span>&copy;2023 Trilogy Health Services</span>                <a href="https://www.hud.gov/program_offices/fair_housing_equal_opp" target="_blank"><i class="fa-regular fa-wheelchair"></i><span class="visuallyhidden">Fair Housing Equal Opportunity Accessibility</span></a>
+                <a href="https://www.hud.gov/program_offices/fair_housing_equal_opp/disabilities/accessibilityR" target="_blank"><i class="fa-regular fa-house-chimney"></i><span class="visuallyhidden">Fair Housing Equal Opportunity</span></a>
+                </p> 
+                <p><a href="#main">Back to Top</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="bottomcred">
+  <p><a target="_blank" href="https://designweblouisville.com">web design</a> by design web</p>
+</div>
+<style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-3.wp-container-3{flex-wrap:nowrap;}
+</style>
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "Organization",
+  "name": "Trilogy Health Services",
+  "url": "https://trilogyhs.com",
+  "logo": "https://trilogyhs.com/wp-content/uploads/TrilogyHealthServices_Logo_tz3fme.webp",
+  "description": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": " 303 N Hurstbourne Pkwy Ste 200 ",
+    "addressLocality": "Louisville",
+    "addressRegion": "KY",
+    "postalCode": "40222",
+    "addressCountry": "United States"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1502-412-5847",
+    "contactType": "Customer Service"
+  }
+}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJZFDJS');</script>
+<!-- End Google Tag Manager -->
+<meta name="facebook-domain-verification" content="mteauxculjzstk57f3dar3ewhrq4dt" /></body>
+
+</html>
